@@ -1,0 +1,186 @@
+.container-fluid {
+    padding: 0px 40px;
+}
+
+nav {
+    .container-fluid {
+        .nav-wrapper {
+            padding: 15px 0px;
+            border-bottom: 1px solid $openblack;
+
+            .nav-left {
+                ul {
+                    display: flex;
+                    margin: 0px;
+                    padding: 0;
+                    padding-top: 6px !important;
+
+                    li {
+                        list-style: none;
+
+                        a {
+                            text-decoration: none;
+                            color: black;
+                        }
+
+                        span {
+                            background-color: $primary-color;
+                            padding: 10px;
+                            border-radius: 30px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+
+                .logo {
+                    font-size: 30px;
+                    font-weight: bolder;
+                    margin: 0px;
+
+                    span {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .nav-right {
+        button.navbar-toggle{
+            display: none;
+            background-color: white;
+            border: none;
+            outline: none;
+            padding: 5px 10px;
+            font-size: 20px;
+        }
+        .sign-in-btn {
+            text-decoration: none;
+            color: black;
+            background-color: $primary-color;
+            padding: 10px 30px;
+            border-radius: 8px;
+            border: none;
+            font-weight: bold;
+        }
+
+        .form-group {
+            display: inline-block;
+            max-width: none;
+            min-width: 380px;
+            position: relative;
+            padding: 10px;
+            padding-left: 50px;
+            margin-right: 30px;
+            background-color: rgba(128, 128, 128, 0.151);
+            border: none;
+            border-radius: 5px;
+            outline: none;
+
+            &:hover {
+                background-color: rgba(128, 128, 128, 0.215);
+                ;
+            }
+
+            input {
+                border: none;
+                outline: none;
+                width: 100%;
+                background-color: transparent;
+            }
+
+            .search-icon {
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                top: 10px;
+                left: 15px;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+
+    }
+}
+@media (max-width:546px){
+    nav{
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-fluid {
+        width: 1450px;
+    }
+}
+
+@media (max-width:768px) {
+    nav {
+        .nav-left {
+            .logo{
+                p{
+                    font-size: 22px;
+                }
+                span{
+                    font-size: 22px;
+                }
+            }
+            ul {
+                display: none;
+                li{
+                    display: none;
+                }
+            }
+        }
+
+        .nav-right {
+            .form-group {
+                display: none;
+
+                input {
+                    display: none;
+                }
+            }
+            button.navbar-toggle{
+                display: inline-block;
+            }
+            .sign-in-btn{
+                padding: 5px 10px;
+                font-size: 15px;
+            }
+        }
+    }
+    .container-fluid{
+        padding: 0px 12px;
+    }
+}
+
+// @media (max-width: 1350px){
+//     .daily-email{
+//         display: none;
+//     }
+// }
+// @media (max-width: 1255px) {
+//     .what-is-machine {
+//         display: none;
+//     }
+//     .form-group{
+//         width: 500px;
+//     }
+// }
+// @media (max-width: 1175px) {
+//     .sell-car {
+//         display: none;
+//     }
+// }
+// @media (max-width: 1070px) {
+//     .auction {
+//         display: none;
+//     }
+//     .form-group {
+//         width: 540px;
+//     }
+// }
